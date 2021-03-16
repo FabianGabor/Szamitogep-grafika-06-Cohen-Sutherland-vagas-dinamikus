@@ -40,10 +40,10 @@ void draw() {
     xMax = mouseX + rectW/2;
     yMax = mouseY + rectH/2;
     
-    /*
+   
     if (vag)
         rect(mouseX - rectW/2, mouseY - rectH/2, rectW, rectH);
-        */
+     
 
     if (table.getRowCount() > 0) {
         for (TableRow row : table.rows()) {
@@ -112,11 +112,11 @@ void CohenSutherlandSzakaszvago(float x0, float y0, float x1, float y1)
                 if (pontKint == pont1Zona) {
                     x0 = x;
                     y0 = y;
-                    pont1Zona = Zona(x0, y0);
+                    pont1Zona = Zona(x, y);
                 } else {
                     x1 = x;
                     y1 = y;
-                    pont2Zona = Zona(x1, y1);
+                    pont2Zona = Zona(x, y);
                 }            
             }
         }
